@@ -1,0 +1,57 @@
+:root{
+    --primary-color1: hotpink;
+    --primary-color2: pink;
+    --second-color: purple;
+    --background-color: rgb(163, 162, 162);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    margin-bottom: 3em;
+}
+
+.sheld{
+    background-color: var(--second-color);
+    color: whitesmoke;
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapDots{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 1em;
+    overflow: hidden;
+    margin:1em;
+    border-radius: 100px;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+footer{
+    margin-top: 3em;
+    p{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+}

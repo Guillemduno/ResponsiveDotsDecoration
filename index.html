@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="sass/styles.min.css">
+        <script src="functions.js"></script>
+        <title>Responsive dots decoration | Guillem Duñó</title>
+    </head>
+    <body>
+        <header class="sheld">
+            <h1>Responsive Dots decoration</h1>
+        </header>
+        <script>
+            // Variables.
+            let borderColor1    = "3px solid purple";
+            let borderColor2    = "6px solid purple";
+            let borderColor3    = "1px solid purple";
+            let minDotSize      = "10px";
+            let mediumDotSize   = "30px";
+            let bigDotSize      = "80px";
+            let qttyDotsL1      = 6;
+            let qttyDotsL2      = 20;
+            let qttyDotsL3      = 100;
+
+            // Dots Structure.
+            createWrapDots("wrapDots1", "wrapDots", qttyDotsL1, 'var(--primary-color1)', mediumDotSize, borderColor1);
+            createWrapDots("wrapDots2", "wrapDots", qttyDotsL2, 'var(--primary-color1)', bigDotSize, borderColor2);
+            for (let index = 3; index < 15; index++) {
+                createWrapDots("wrapDots"+index, "wrapDots", qttyDotsL3, 'var(--primary-color2)', minDotSize, borderColor3); 
+            }
+            createWrapDots("wrapDots20", "wrapDots", qttyDotsL2, 'var(--primary-color1)', bigDotSize, borderColor2);
+            createWrapDots("wrapDots21", "wrapDots", qttyDotsL1, 'var(--primary-color1)', mediumDotSize, borderColor1);
+        </script>
+        <footer class="sheld">
+            <p>Created by Guillem Duñó Aixerch</p>
+        </footer>
+    </body>
+</html>
