@@ -1,5 +1,4 @@
-   
-   
+
 // This function creates dots based on the quantity of dots, 
 // color, size, and color of the border.
 function createDots(numOfDots, divId, color, size, border=""){
